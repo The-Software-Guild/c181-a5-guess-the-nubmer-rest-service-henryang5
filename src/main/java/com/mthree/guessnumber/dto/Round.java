@@ -1,16 +1,19 @@
 package com.mthree.guessnumber.dto;
 
+import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.util.Objects;
 
 public class Round {
     private int gameId;
     private int roundId;
-    private LocalDate guessTime;
+    private Timestamp guessTime;
     private String guess;
     private String guessResult;
 
-    public Round(int gameId, int roundId, LocalDate guessTime, String guess, String guessResult) {
+    public Round() {}
+
+    public Round(int gameId, int roundId, Timestamp guessTime, String guess, String guessResult) {
         this.gameId = gameId;
         this.roundId = roundId;
         this.guessTime = guessTime;
@@ -34,11 +37,11 @@ public class Round {
         this.roundId = roundId;
     }
 
-    public LocalDate getGuessTime() {
+    public Timestamp getGuessTime() {
         return guessTime;
     }
 
-    public void setGuessTime(LocalDate guessTime) {
+    public void setGuessTime(Timestamp guessTime) {
         this.guessTime = guessTime;
     }
 
