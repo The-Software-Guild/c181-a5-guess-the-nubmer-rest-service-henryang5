@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS GuessTheNumberDB;
-CREATE DATABASE GuessTheNumberDB;
-USE GuessTheNumberDB;
+DROP DATABASE IF EXISTS GuessTheNumberDBTest;
+CREATE DATABASE GuessTheNumberDBTest;
+USE GuessTheNumberDBTest;
 
 CREATE TABLE GAME(
     game_id INT AUTO_INCREMENT,
@@ -14,7 +14,7 @@ CREATE TABLE GAME(
 CREATE TABLE ROUND(
     round_id INT AUTO_INCREMENT,
     game_id INT NOT NULL,
-    guess_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    guess_time DATETIME,
     guess VARCHAR(4) NOT NULL,
     result VARCHAR(10),
     CONSTRAINT pk_round_id

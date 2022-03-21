@@ -66,7 +66,7 @@ public class Round {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Round round = (Round) o;
-        return gameId == round.gameId && roundId == round.roundId && guessTime.equals(round.guessTime) && guess.equals(round.guess) && guessResult.equals(round.guessResult);
+        return gameId == round.gameId && roundId == round.roundId && guess.equals(round.guess) && guessResult.equals(round.guessResult);
     }
 
     @Override

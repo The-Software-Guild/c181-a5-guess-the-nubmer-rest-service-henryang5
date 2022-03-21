@@ -84,7 +84,7 @@ public class GuessNumberServiceImpl implements GuessNumberService{
         char[] guessArr = guess.toCharArray();
         char[] answerArr = answer.toCharArray();
 
-        for(int i = 0; i < 4; i++)
+        for(int i = 0; i < answerArr.length; i++)
         {
             if(guess.indexOf(answerArr[i]) >= 0) // search if guess digit is in answer
             {

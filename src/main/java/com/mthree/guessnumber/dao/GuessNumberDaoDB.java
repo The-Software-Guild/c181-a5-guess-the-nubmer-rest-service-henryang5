@@ -14,7 +14,6 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Repository
-@Profile("database")
 public class GuessNumberDaoDB implements GuessNumberDao {
 
     private final JdbcTemplate jdbcTemplate;
